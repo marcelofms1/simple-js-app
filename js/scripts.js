@@ -47,3 +47,9 @@ let pokemonList = [
      abilities:['Rock-head', 'Heavy-metal']
     },
 ];
+
+// This creates a loop of strings with name, height and types of pokemon.
+
+for (let i = 0; i < pokemonList.length; i++){
+    document.write(`${pokemonList[i].name}- (Height: ${pokemonList[i].height}) (Type: ${pokemonList[i].abilities})`);   
+}
