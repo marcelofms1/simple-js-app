@@ -57,19 +57,23 @@ let pokemonList = [
 // This code creates two text messages:
 
 let pokemonSize = [
-    big = `WOW, that's a big pokemon!`,
-    small = `Uh, this one is kind of small.`
+    big = `Wow, that's a big pokemon.`,
+    small = `Uh, this one is kind of small.`,
+    huge = "That's the biggest pokemon I've ever seen!"
 ];
 
 
 // This code creates a for loop with if and else statements:
 
+
 for (let i = 0; i < pokemonList.length; i++){
 
     if (pokemonList[i].height > 1.6){
-        document.write(` ${pokemonList[i].name} (height: ${pokemonList[i].height}) - ${pokemonSize[0]} `);
+        document.write(`<br>${pokemonList[i].name} - `);
+        document.write(`(Height: ${pokemonList[i].height}) ${pokemonSize[0]}<br>`);
     } 
     else {
-        document.write(` ${pokemonList[i].name} (height: ${pokemonList[i].height}) - ${pokemonSize[1]} `);
+        document.write(`<br>${pokemonList[i].name} - `);
+        document.write(`(Height: ${pokemonList[i].height}) ${pokemonSize[1]}<br>`)
     }
 }
