@@ -1,22 +1,20 @@
 body{
-    color:red;
+    color:black;
     font-size: 25px;
-    line-height: 40%;
+    
 }
-
-#pokemon_name{
-    color:blue;
-    font-style: italic;
-    text-decoration: underline;
-    font-weight: 800;
-}
-
 h1{
+    text-decoration: underline;
+    color:red;
+}
+
+h3{
+    color:red;
     text-decoration: underline;
 }
 
 p{
-    color:black;
+    line-height: 5%;
 }
 
 
