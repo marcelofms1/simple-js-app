@@ -1,40 +1,95 @@
-body{
-    color:black;
-    font-size: 25px;
-    
+html, 
+body {
+  font-family: Arial, sans-serif;
 }
+
+#modal-container {
+  position: fixed;
+  padding: 20px;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  
+  /* to show it above other content */
+  z-index: 999; 
+  
+  /* to allow scrolling if the screen is not high enough*/
+  overflow: auto; 
+  
+  /* this is used to center the modal */
+  display: grid;
+  text-align: center;
+}
+
+.modal {
+  margin: auto;
+  /* display: inline-block; */
+  display:flex;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 15px;
+  width: 100%;
+  max-width: 700px;
+  text-align: left;
+  box-shadow: 15px 15px 5px  black;
+}
+
+.modal-close {
+  float: right;
+  -webkit-appearance: none;
+  border: 0;
+  background: none;
+  color: #777;
+  text-decoration: underline;
+}
+
+.modal h1 {
+  margin-top: 0;
+  color:red;
+}
+
+.modal p {
+  margin-bottom: 0;
+  font-weight: 600;
+  color:red;
+}
+
+.modal img{
+    /* border:2px solid red; */
+    width:30%;
+}
+
+#modal-container {
+  display: none;
+}
+
+#modal-container.is-visible {
+  /* CSS for modal container - add your own desired CSS styles here */
+  display: block;
+}
+
+ul{
+    list-style: none;
+    padding:10px;
+    margin:10px;
+}
+
+.button-class{
+    padding: 1.5%;
+    margin-bottom: 1%;
+}
+
+.button-class:hover{
+    background-color: rgb(249, 162, 136);
+}
+
 h1{
-    text-decoration: underline;
-    color:red;
-}
-
-h3{
-    color:red;
+    color:black;
     text-decoration: underline;
 }
 
-p{
-    line-height: 5%;
-}
 
-.button-class {
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 04; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: white;
-    color: black;
-    border: 2px solid royalblue;
-  }
-
-  .button-class:hover{
-      border: 2px solid red;
-  }
 
